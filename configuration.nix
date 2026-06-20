@@ -152,7 +152,7 @@
     obsidian
     vscode
     git
-    uv
+    python3
     feishu
   ];
 
