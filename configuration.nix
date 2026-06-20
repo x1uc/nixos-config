@@ -152,6 +152,8 @@
     obsidian
     vscode
     git
+    uv
+    feishu
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
