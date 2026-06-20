@@ -102,6 +102,7 @@
     isNormalUser = true;
     description = "lixc";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
@@ -110,6 +111,24 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # Enable Steam.
+  programs.steam.enable = true;
+
+  # Enable GameMode.
+  programs.gamemode.enable = true;
+  
+  programs.zsh = {
+    enable = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+
+    ohMyZsh = {
+      enable = true;
+      theme = "agnoster";
+      plugins = [ "git" "sudo" ];
+    };
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
