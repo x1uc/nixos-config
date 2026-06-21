@@ -117,6 +117,18 @@
 
   # Enable GameMode.
   programs.gamemode.enable = true;
+
+  # Allow generic Linux dynamic binaries, such as Cloudflare workerd used by Wrangler.
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc
+      zlib
+      openssl
+      curl
+      glibc
+    ];
+  };
   
   programs.zsh = {
     enable = true;
