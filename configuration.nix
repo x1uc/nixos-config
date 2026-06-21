@@ -153,6 +153,9 @@
     vscode
     git
     python3
+    gopls
+    delve
+    gotools
     feishu
   ];
 
