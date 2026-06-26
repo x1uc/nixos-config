@@ -154,7 +154,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim   
+    vim
     wget
     wechat
     claude-code
@@ -169,6 +169,8 @@
     delve
     gotools
     feishu
+    # Lightweight Etcher-like USB image writer.
+    usbimager
     # Run the official Balena Etcher AppImage.
     appimage-run
   ];
