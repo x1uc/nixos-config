@@ -169,6 +169,8 @@
     delve
     gotools
     feishu
+    # Run the official Balena Etcher AppImage.
+    appimage-run
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
